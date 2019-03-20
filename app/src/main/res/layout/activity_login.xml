@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c9ceec"
+    tools:context="com.androidrelax.activity.LoginActivity" 
+
+    >
+
+    <TextView
+        android:id="@+id/musicname"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#e0e3f4"
+        android:gravity="center"
+        android:text="登录"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/fanhui_login"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/musicname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/fanhui" />
+
+    <Button
+        android:id="@+id/btn_login"
+       
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/forget"
+        android:layout_below="@+id/rember"
+        android:layout_marginTop="28dp"
+        android:layout_toRightOf="@+id/fanhui_login"
+        android:background="@drawable/login_shape"
+        android:text="登录" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/btn_login"
+        android:layout_alignRight="@+id/btn_login"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/registerbutton_shape"
+        android:text="立即注册" />
+
+    <TextView
+        android:id="@+id/forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rember"
+        android:layout_alignBottom="@+id/rember"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="忘记密码？"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/login_username"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignLeft="@+id/login_password"
+        android:layout_alignRight="@+id/login_password"
+        android:layout_below="@+id/musicname"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/editshape"
+        android:drawableLeft="@drawable/wode"
+        android:ems="10"
+        android:hint="请输入您的账号"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignLeft="@+id/rember"
+        android:layout_alignRight="@+id/forget"
+        android:layout_below="@+id/login_username"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/editshape"
+        android:drawableLeft="@drawable/password"
+        android:ems="10"
+        android:hint="请输入您的密码"
+        android:inputType="textPassword" >
+
+     
+    </EditText>
+
+    <ImageView
+        android:id="@+id/weixin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/qq"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/weixin" />
+
+    <CheckBox
+        android:id="@+id/rember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_password"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/fanhui_login"
+        android:text="记住密码" />
+
+    <ImageView
+        android:id="@+id/qq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_register"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/qq" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="——————其他登录方式———————" />
+
+    <ImageView
+        android:id="@+id/weibo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_alignTop="@+id/weixin"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/weibo" />
+
+    <TextView
+        android:id="@+id/infotv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forget"
+        android:layout_toRightOf="@+id/qq" />
+
+</RelativeLayout>

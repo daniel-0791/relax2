@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c9ceec"
+    tools:context="com.androidrelax.activity.Register" >
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#e0e3f4"
+        android:gravity="center"
+        android:text="注册"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/fanhui_reg"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/textview2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/fanhui" />
+
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="290dp"
+        android:layout_height="45dp"
+        android:layout_alignLeft="@+id/telnumber"
+        android:layout_below="@+id/telnumber"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/registerbutton_shape"
+        android:drawableLeft="@drawable/password"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/repassword1"
+        android:layout_width="290dp"
+        android:layout_height="45dp"
+        android:layout_alignLeft="@+id/password1"
+        android:layout_below="@+id/password1"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/registerbutton_shape"
+        android:drawableLeft="@drawable/password"
+        android:ems="10"
+        android:hint="请再次输入密码"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/login_input_code_et"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_alignLeft="@+id/repassword1"
+        android:layout_below="@+id/repassword1"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/registerbutton_shape"
+        android:drawableLeft="@drawable/yanzhengma"
+        android:ems="10"
+        android:hint="请输入验证码"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/login_request_code_btn"
+        android:layout_width="115dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/login_input_code_et"
+        android:layout_alignRight="@+id/repassword1"
+        android:layout_alignTop="@+id/login_input_code_et"
+        android:background="@drawable/login_shape"
+        android:text="获取验证码"
+        android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/telnumber"
+            android:layout_width="290dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/textview2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/registerbutton_shape"
+            android:drawableLeft="@drawable/tel"
+            android:ems="10"
+            android:hint="请输入您的手机号"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/btn_register1"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/login_input_code_et"
+            android:layout_below="@+id/login_input_code_et"
+            android:layout_marginTop="34dp"
+            android:background="@drawable/login_shape"
+            android:text="立即注册" />
+
+</RelativeLayout>

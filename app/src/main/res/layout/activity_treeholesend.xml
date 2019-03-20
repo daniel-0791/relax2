@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/treesend"
+    android:orientation="vertical"
+    tools:context="com.androidrelax.activity.TreeHoleSendActivity" >
+
+    <EditText
+        android:id="@+id/sendtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:hint="请输入标题...."
+        android:textColor="#111111"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/sendcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sendtitle"
+        android:gravity="top"
+        android:hint="请输入心情...."
+        android:minLines="14"
+        android:textColor="#111111"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/sendbtn"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sendcontent"
+        android:text="发送" />
+
+    <Button
+        android:id="@+id/recordbtn"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sendcontent"
+        android:layout_alignParentRight="true"
+        android:text="笔记本" />
+
+</RelativeLayout>

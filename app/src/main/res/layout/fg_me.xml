@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c9ceec"
+    tools:context="com.androidexample.relax.PersonnalCenterActivity" >
+
+    <ImageView
+        android:id="@+id/touxaing"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/touxiang" />
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="100dp"
+        android:text="游鱼出听"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/xiangyouPerson"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/nickname"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/xiangyou" />
+
+    <ImageView
+        android:id="@+id/mylike"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/mylike" />
+
+    <TextView
+        android:id="@+id/TVmylike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="103dp"
+        android:text="我的收藏"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/mymessage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="160dp"
+        android:src="@drawable/mymessage" />
+    <TextView
+        android:id="@+id/TVmymessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="163dp"
+        android:text="我的消息"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/setting"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="220dp"
+        android:src="@drawable/setting" />
+     <TextView
+        android:id="@+id/TVsetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="223dp"
+        android:text="设置"
+        android:textSize="20dp" />
+
+
+
+</RelativeLayout>
+

@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_daily"
+    android:orientation="vertical"
+    tools:context="com.androidrelax.activity.TreeHoleShowActivity" >
+
+    <TextView
+        android:id="@+id/treeshowlist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <TextView
+        android:id="@+id/treeshow1list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/treeshowbtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/treeshowbtn" 
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        />
+
+</LinearLayout>

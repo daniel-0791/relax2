@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.androidrelax.activity.MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/vpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tabs_rg" >
+    </RelativeLayout>
+
+    <!--
+    <RadioGroup
+        android:id="@+id/tabs_rg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="#dcdcdc"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/listen_tab"
+            style="@style/radiobutton_style"
+            android:checked="true"
+            android:drawableTop="@drawable/mainlisten"
+            android:text="倾听" />
+
+        <RadioButton
+            android:id="@+id/mail_tab"
+            style="@style/radiobutton_style"
+            android:drawableTop="@drawable/mainmail"
+            android:text="信件" />
+
+        <RadioButton
+            android:id="@+id/treehole_tab"
+            style="@style/radiobutton_style"
+            android:drawableTop="@drawable/maintree"
+            android:text="树洞" />
+
+        <RadioButton
+            android:id="@+id/me_tab"
+            style="@style/radiobutton_style"
+            android:drawableTop="@drawable/mainme"
+            android:text="我" />
+    </RadioGroup>
+    -->
+
+    <LinearLayout
+        android:id="@+id/tabs_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_listen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/listen_tab"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/mainlisten1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/listen_tab"
+                android:layout_centerHorizontal="true"
+                android:text="倾听" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_mail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/mail_tab"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/mainmail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mail_tab"
+                android:layout_centerHorizontal="true"
+                android:text="信件" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_treehole"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/treehole_tab"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/maintree" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/treehole_tab"
+                android:layout_centerHorizontal="true"
+                android:text="树洞" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_me"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/me_tab"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/mainme" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/me_tab"
+                android:layout_centerHorizontal="true"
+                android:text="个人中心" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

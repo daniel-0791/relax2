@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.androidrelax.activity.TreeHoleDiaryActivity" >
+
+  
+     <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+   <EditText
+        android:id="@+id/sendtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:hint="请输入标题...."
+        android:textColor="#111111"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/sendcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sendtitle"
+        android:gravity="top"
+        android:hint="请输入心情...."
+        android:minLines="14"
+        android:textColor="#111111"
+        android:textSize="20dp" />
+     <TextView
+        android:id="@+id/list_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2018.12.20"
+        android:textSize="10dp"/>
+     
+       </LinearLayout>
+</RelativeLayout>

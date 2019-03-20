@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c9ceec"
+    tools:context="com.androidrelax.activity.MusicMainActivity" >
+
+    <ImageView
+        android:id="@+id/fanhui_login"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/fanhui" />
+
+    <TextView
+        android:id="@+id/musicname"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/fanhui_login"
+         android:gravity="center"
+        android:text="轻音乐主题"
+        android:textSize="22dp" />
+
+    <ImageView
+        android:id="@+id/button_universe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_below="@+id/fanhui_login"
+        android:src="@drawable/universe" />
+
+    <ImageView
+        android:id="@+id/button_water"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       
+        android:layout_below="@+id/button_forest"
+        android:src="@drawable/water" />
+
+    <ImageView
+        android:id="@+id/button_goodnight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_below="@+id/button_water"
+        android:src="@drawable/goodnight" />
+
+    <ImageView
+        android:id="@+id/button_forest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_below="@+id/button_universe"
+        android:src="@drawable/forest" />
+
+    <TextView
+        android:id="@+id/TextView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button_water"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_marginBottom="15dp"
+        android:text="终究梦浮生"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/button_universe"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="25dp"
+        android:text="给你全宇宙的爱"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/totaltime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignTop="@+id/button_forest"
+        android:layout_marginTop="18dp"
+        android:text="森林在安睡着"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView06"
+        android:layout_alignLeft="@+id/TextView03"
+        android:text="世事漫流水"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView04"
+        android:layout_alignLeft="@+id/totaltime"
+        android:text="夜已深"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button_goodnight"
+        android:layout_alignLeft="@+id/TextView04"
+        android:layout_marginBottom="14dp"
+        android:text="你能因我而安眠"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView05"
+        android:layout_alignLeft="@+id/TextView03"
+        android:text="我希望今夜"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+</RelativeLayout>

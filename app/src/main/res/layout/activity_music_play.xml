@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c9ceec"
+    tools:context="com.androidrelax.activity.MusicPlayActivity" >
+
+    <ImageView
+        android:id="@+id/fanhui_musicplay"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/fanhui" />
+
+    <ImageView
+        android:id="@+id/share"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/share" />
+
+    <ImageView
+        android:id="@+id/like1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/left"
+        android:layout_marginLeft="14dp"
+        android:src="@drawable/xihuan1" />
+   <ImageView
+        android:id="@+id/alarm"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_alignTop="@+id/right"
+        android:layout_marginRight="14dp"
+        android:src="@drawable/alarm" />
+
+    <ImageView
+        android:id="@+id/left"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/like1"
+        android:src="@drawable/left" />
+    
+    <ImageView
+        android:id="@+id/right"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="40dp"
+        android:layout_toLeftOf="@+id/alarm"
+        android:src="@drawable/right" />
+
+   <ImageView
+       android:id="@+id/play"
+       android:layout_width="40dp"
+       android:layout_height="40dp"
+       android:layout_alignParentBottom="true"
+       android:layout_centerHorizontal="true"
+       android:layout_marginBottom="11dp"
+       android:src="@drawable/play" />
+    
+    <TextView
+        android:id="@+id/musicname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="TextView"
+        android:textSize="22dp" />
+
+    <SeekBar
+        android:id="@+id/SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/totaltime"
+        android:layout_toLeftOf="@+id/share"
+        android:layout_toRightOf="@+id/like1"
+        android:max="200"
+        android:maxHeight="2dp"
+        android:minHeight="2dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="3dp"
+        android:progressDrawable="@drawable/layer_progress"
+        android:thumb="@drawable/shape_circle" />
+
+    <TextView
+        android:id="@+id/totaltime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/play"
+        android:layout_alignLeft="@+id/alarm"
+        android:layout_marginBottom="31dp"
+        android:text="00:00"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/nowtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/SeekBar"
+        android:text="00:00"
+        android:textSize="12dp" />
+
+</RelativeLayout>

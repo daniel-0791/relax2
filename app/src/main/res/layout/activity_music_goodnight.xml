@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c9ceec"
+    tools:context="com.androidrelax.activity.MusicGoodnightActivity" >
+
+    <TextView
+        android:id="@+id/musicnameU"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#e0e3f4"
+        android:layout_alignBottom="@+id/fanhui_goodnight"
+         android:gravity="center"
+        android:text="夜已深 晚安"
+        android:textSize="22dp" />
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fanhui_goodnight" >
+
+    </ListView>
+
+    <ImageView
+        android:id="@+id/fanhui_goodnight"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/fanhui" />
+
+</RelativeLayout>
